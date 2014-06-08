@@ -1,0 +1,10 @@
+/*
+Theme Name:     Discovery romana PME-Website.ch CHILD
+Theme URI:      http://example.com/
+Description:    Child theme for the Discovery theme
+Author:         Your name here
+Author URI:     http://example.com/about/
+Template:       Discovery
+Version:        0.1.0
+*/
+@import url("../discovery/style.css");
