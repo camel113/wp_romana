@@ -8,6 +8,8 @@ Template:       Discovery
 Version:        0.1.0
 */
 @import url("../discovery/style.css");
+
+/*Colors treatment*/
 .entry-header{
 	background-color: #472a0a;
 }
