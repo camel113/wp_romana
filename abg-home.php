@@ -8,13 +8,13 @@
  * @since discovery 1.0
  */
 
-
+remove_filter ('the_content', 'wpautop');
 
 get_header(); ?>
 
 		<div id="primary_home" class="content-area">
 
-			<div id="content" class="fullwidth" role="main">
+			<div id="content" class="fullwidth abg-home" role="main">
 
 
 

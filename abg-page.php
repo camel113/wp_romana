@@ -44,6 +44,3 @@ get_header(); ?>
 			<?php if ( is_active_sidebar( 'right_column' ) && dynamic_sidebar('right_column') ) : else : ?>   
 			<?php endif; ?>
 		</div>
-
-
-<?php get_footer(); ?>
