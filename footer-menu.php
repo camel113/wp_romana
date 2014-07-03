@@ -18,10 +18,8 @@
 	</div>
 	</div><!-- #main .site-main -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="site-info">
-            <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
-            <?php _e('Discovery WordPress Theme','discovery'); ?></a>
-            <?php echo __( 'Powered By WordPress ', 'discovery' ); ?>
+        <div class="site-info vcard">
+            <span class="fn">La Romana | Restaurant Pizzeria</span> - <span class="adr"><span class="street-address">Place de la gare 2</span> - <span class="postal-code">1580</span> <span class="locality">Avenches</span></span> - <span class="tel">026 675 13 75</span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
     <a href="#top" id="smoothup"></a>
