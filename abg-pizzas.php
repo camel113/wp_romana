@@ -32,11 +32,11 @@ get_header(); ?>
 	          	<div class="abg-row romana-pizza-item">
 	            	<div class="abg-col-2-3 romana-pizza-item-description">
 		              	<h1><?php the_title();?></h1>
-		              	<p><?php print_custom_field('description'); ?></p>
+		              	<p><?php echo (get_post_meta(get_the_ID(), 'pizza_description', true )); ?></p>
 	            	</div>
 	            	<div class="abg-col-1-3 romana-pizza-item-price">
-	            		<span class="romana-prix"><?php print_custom_field('prix_normal'); ?></span>
-	            		<span class="romana-mini-prix"><?php print_custom_field('prix_reduit'); ?></span>
+	            		<span class="romana-prix"><?php echo (get_post_meta(get_the_ID(), 'pizza_normal_price', true )); ?></span>
+	            		<span class="romana-mini-prix"><?php echo (get_post_meta(get_the_ID(), 'pizza_small_price', true )); ?></span>
 	        		</div>
 	          	</div>
 	          <?php endwhile;endif;?> 
