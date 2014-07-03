@@ -4,7 +4,7 @@ Theme URI:      http://example.com/
 Description:    Child theme for the Discovery theme
 Author:         Your name here
 Author URI:     http://example.com/about/
-Template:       Discovery
+Template:       discovery
 Version:        0.1.0
 */
 @import url("../discovery/style.css");
