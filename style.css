@@ -8,6 +8,9 @@ Template:       discovery
 Version:        0.1.0
 */
 @import url("../discovery/style.css");
+#abg-image img{
+	margin: 10px 0 0 0;
+}
 #menu-items{
 	margin-top: 20px;
 }
@@ -108,6 +111,9 @@ Version:        0.1.0
 	.abg-col-1-2,.abg-col-2-3,.abg-col-1-3{
 		width: 100%;
 	}
+	.site-introduction{
+		display: none;
+	}
 	.romana-pizza-item-description p{
 		margin-bottom: 5px;
 	}
@@ -118,9 +124,15 @@ Version:        0.1.0
 	.romana-pizza-item-price{
 		margin-bottom: 3px;
 	}
-	.romana-pizza-item-description,.romana-pizza-item-price{
+	.romana-pizza-item-description,.romana-pizza-item-price,.romana-menu-item-description,.romana-menu-item-price{
 		padding-left: 6px;
 		margin-left: 0.5em;
+	}
+	.romana-menu-item .romana-prix{
+		padding-left: 0;
+	}
+	.main-small-navigation .menu li a{
+		color: #ccc;
 	}
 	#primary{
 		padding-bottom: 10px;
@@ -207,4 +219,7 @@ Version:        0.1.0
 }
 .thumbs-more-link a:hover{
 	background-color: #472a0a;
+}
+.main-small-navigation .menu li a{
+	color: #fff;
 }
