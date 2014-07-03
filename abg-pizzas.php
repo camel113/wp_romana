@@ -29,12 +29,12 @@ get_header(); ?>
 	          	<?php
 	          		if (have_posts()) :  while ( have_posts() ) : the_post();
 	          	?>
-	          	<div class="abg-row romana-menu-item">
-	            	<div class="abg-col-2-3 romana-menu-item-description">
+	          	<div class="abg-row romana-pizza-item">
+	            	<div class="abg-col-2-3 romana-pizza-item-description">
 		              	<h1><?php the_title();?></h1>
 		              	<p><?php print_custom_field('description'); ?></p>
 	            	</div>
-	            	<div class="abg-col-1-3 romana-menu-item-price">
+	            	<div class="abg-col-1-3 romana-pizza-item-price">
 	            		<span class="romana-prix"><?php print_custom_field('prix_normal'); ?></span>
 	            		<span class="romana-mini-prix"><?php print_custom_field('prix_reduit'); ?></span>
 	        		</div>

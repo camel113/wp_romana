@@ -8,7 +8,7 @@
  * @since discovery 1.0
  */
 $post_type = 'menu_item';
-$tax = 'project_menu';
+$tax = 'menu_category';
 $tax_terms = get_terms($tax);
 
 remove_filter ('the_content', 'wpautop');
@@ -40,7 +40,9 @@ get_header(); ?>
 								    $my_query = null;
 								    $my_query = new WP_Query($args);
 								    if( $my_query->have_posts() ):?>
-								      	<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+								      	<?php while ($my_query->have_posts()) : $my_query->the_post(); 
+								      		if($tax_term->slug == 'entrees'): ?>
+
 								      		<div class="abg-row romana-menu-item">
 								            	<div class="abg-col-2-3 romana-menu-item-description">
 									              	<h1><?php the_title();?></h1>
@@ -49,7 +51,8 @@ get_header(); ?>
 								            		<span class="romana-prix"><?php echo (get_post_meta(get_the_ID(), 'menu_item_price', true )); ?></span>
 								        		</div>
 								          	</div>
-								        <?php endwhile; ?>
+								          	<?php endif;
+								        endwhile; ?>
 								   	<?php endif;
 								    wp_reset_query();
 							  }
