@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Template Name: ABG Entrees
+ * Template Name: ABG Viandes
  * Description: A Page Template with sidebar widgets.
  *
  * @package discovery
@@ -43,7 +43,7 @@ get_header(); ?>
 								    $my_query = new WP_Query($args);
 								    if( $my_query->have_posts() ):?>
 								      	<?php while ($my_query->have_posts()) : $my_query->the_post(); 
-								      		if($tax_term->slug == 'entrees'): ?>
+								      		if($tax_term->slug == 'viandes'): ?>
 
 								      		<div class="abg-row romana-menu-item">
 								            	<div class="abg-col-2-3 romana-menu-item-description">
@@ -59,7 +59,8 @@ get_header(); ?>
 								    wp_reset_query();
 							  }
 							}?>
-
+					<p class="menu-moreinfos">Toutes nos viandes sont servies avec légumes et pâtes ou riz ou risotto ou frites.</p>
+					<p>Sauce à choix : champignons, moutarde, vin rouge, poivre vert, oignons, beurre aux herbes.</p>
 		  			<div id="abg-pagination"><?php my_pagination(); ?></div>
 
 	  				</div>

@@ -14,6 +14,9 @@ Version:        0.1.0
 #menu-items{
 	margin-top: 20px;
 }
+.site-info{
+	color: #d3d3d3;
+}
 /* Menu items */
 .romana-menu-item{
 	margin-top: 20px;
@@ -39,9 +42,19 @@ Version:        0.1.0
 	content: "mini: ";
 	font-size: 0.7em;
 }
+.romana-starter-prix{
+	margin-left: 5px;
+}
+.romana-starter-prix:before {
+	content: "entrée: ";
+	font-size: 0.7em;
+}
 .romana-prix{
 	display: inline-block;
-	width: 30px;
+	width: 55px;
+}
+.menu-moreinfos{
+	margin-top: 30px;
 }
 /****/
 .header-image a img{

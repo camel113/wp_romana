@@ -25,7 +25,7 @@ get_header(); ?>
 	          	?>
 	          	<?php the_content();?>
 	      		<?php endwhile;endif;?> 
-	          	<?php query_posts('posts_per_page=5&orderby=date&order=ASC&post_type=pizzas&paged='.$paged); ?>
+	          	<?php query_posts('posts_per_page=-1&orderby=date&order=ASC&post_type=pizzas&paged='.$paged); ?>
 	          	<?php
 	          		if (have_posts()) :  while ( have_posts() ) : the_post();
 	          	?>
@@ -40,7 +40,14 @@ get_header(); ?>
 	        		</div>
 	          	</div>
 	          <?php endwhile;endif;?> 
-
+	          	<p>Garniture supplémentaire</p>
+          		<ul>
+					<li>Œuf	2.-</li>
+					<li>Lardons, poivrons, olives, anchois, ananas, jambon 3.-</li>
+					<li>Merguez, rucola, salami piquant, champignons 3.-</li>
+					<li>Câpres, Grana Padano, gorgonzola 3.-</li>
+					<li>Jambon cru, carpaccio bœuf, crevettes, saumon fumé 6.-</li>
+				</ul>
 	  			<div id="abg-pagination"><?php my_pagination(); ?></div>
 
 	  				</div>

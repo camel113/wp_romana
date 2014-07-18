@@ -34,7 +34,9 @@ get_header(); ?>
 								      "$tax" => $tax_term->slug,
 								      'post_status' => 'publish',
 								      'posts_per_page' => -1,
-								      'caller_get_posts'=> 1
+								      'caller_get_posts'=> 1,
+								      'orderby' =>'date',
+								      'order' => 'asc'
 								    );
 
 								    $my_query = null;

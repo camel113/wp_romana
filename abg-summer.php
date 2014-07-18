@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Template Name: ABG Entrees
+ * Template Name: ABG Summer
  * Description: A Page Template with sidebar widgets.
  *
  * @package discovery
@@ -43,7 +43,7 @@ get_header(); ?>
 								    $my_query = new WP_Query($args);
 								    if( $my_query->have_posts() ):?>
 								      	<?php while ($my_query->have_posts()) : $my_query->the_post(); 
-								      		if($tax_term->slug == 'entrees'): ?>
+								      		if($tax_term->slug == 'summer'): ?>
 
 								      		<div class="abg-row romana-menu-item">
 								            	<div class="abg-col-2-3 romana-menu-item-description">
@@ -51,6 +51,9 @@ get_header(); ?>
 								            	</div>
 								            	<div class="abg-col-1-3 romana-menu-item-price">
 								            		<span class="romana-prix"><?php echo (get_post_meta(get_the_ID(), 'menu_item_price', true )); ?></span>
+								            		<?php if(get_post_meta(get_the_ID(), 'menu_small_price', true ) != ''): ?>
+								            			<span class="romana-starter-prix"><?php echo (get_post_meta(get_the_ID(), 'menu_small_price', true )); ?></span>
+							            			<?php endif; ?>
 								        		</div>
 								          	</div>
 								          	<?php endif;
