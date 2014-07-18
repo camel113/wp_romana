@@ -190,6 +190,42 @@ function menu_item_price_box_save( $post_id ) {
   $short_desc = $_POST['menu_item_price'];
   update_post_meta( $post_id, 'menu_item_price', $short_desc );
 }
+/* Small Price custom field (menu-item)*/
+add_action( 'add_meta_boxes', 'menu_small_price_box' );
+function menu_small_price_box() {
+    add_meta_box( 
+        'menu_small_price_box',
+        __( 'Menu Small Price' ),
+        'menu_small_price_box_content',
+        'menu_item',
+        'side',
+        'low'
+    );
+}
+function menu_small_price_box_content( $post ) {
+   wp_nonce_field( plugin_basename( __FILE__ ), 'menu_small_price_box_content_nonce' );
+  echo '<label for="menu_small_price"></label>';
+  echo '<input type="text" id="menu_small_price" name="menu_small_price" value="'.(get_post_meta(get_the_ID(), 'menu_small_price', true )).'" placeholder="enter a price" />';
+}
+add_action( 'save_post', 'menu_small_price_box_save' );
+function menu_small_price_box_save( $post_id ) {
+
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+  return;
+
+  if ( !wp_verify_nonce( $_POST['menu_small_price_box_content_nonce'], plugin_basename( __FILE__ ) ) )
+  return;
+
+  if ( 'page' == $_POST['post_type'] ) {
+    if ( !current_user_can( 'edit_page', $post_id ) )
+    return;
+  } else {
+    if ( !current_user_can( 'edit_post', $post_id ) )
+    return;
+  }
+  $short_desc = $_POST['menu_small_price'];
+  update_post_meta( $post_id, 'menu_small_price', $short_desc );
+}
 
 
 function my_taxonomies_menu() {
@@ -209,6 +245,7 @@ function my_taxonomies_menu() {
   $args = array(
     'labels' => $labels,
     'hierarchical' => true,
+    'show_admin_column' => true,
   );
   register_taxonomy( 'menu_category', 'menu_item', $args );
 }
