@@ -11,6 +11,10 @@ Version:        0.1.0
 #abg-image img{
 	margin: 10px 0 0 0;
 }
+.social-icon.facebook a{
+	padding-bottom: 3px;
+	padding-top: 10px;
+}
 .breadcrumbs{
 	display: none;
 }
