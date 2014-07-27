@@ -11,6 +11,9 @@ Version:        0.1.0
 #abg-image img{
 	margin: 10px 0 0 0;
 }
+.breadcrumbs{
+	display: none;
+}
 #menu-items{
 	margin-top: 20px;
 }
