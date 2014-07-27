@@ -44,9 +44,12 @@
 	</div>
 	</div>
         </div><!-- footer container -->
-        <div class="site-info vcard">
-            <span class="fn">La Romana | Restaurant Pizzeria</span> - <span class="adr"><span class="street-address">Place de la gare 2</span> - <span class="postal-code">1580</span> <span class="locality">Avenches</span></span> - <span class="tel">026 675 13 75</span>
-		</div><!-- .site-info -->
+        <div class="site-info ">
+        	<div class="vcard">
+            	<span class="fn">La Romana | Restaurant Pizzeria</span> - <span class="adr"><span class="street-address">Place de la gare 2</span> - <span class="postal-code">1580</span> <span class="locality">Avenches</span></span> - <span class="tel">026 675 13 75</span>
+			</div><!-- .vcard -->
+			<a href="http://www.pme-web.ch" title="Conception site internet">pme-web.ch</a>
+        </div>
 	</footer><!-- #colophon .site-footer -->
     <a href="#top" id="smoothup"></a>
 </div><!-- #page .hfeed .site -->
