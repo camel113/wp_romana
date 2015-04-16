@@ -59,8 +59,9 @@ get_header(); ?>
 								    wp_reset_query();
 							  }
 							}?>
-					<p class="menu-moreinfos">Toutes nos viandes sont servies avec légumes et pâtes ou riz ou risotto ou frites.</p>
-					<p>Sauce à choix : champignons, moutarde, vin rouge, poivre vert, oignons, beurre aux herbes.</p>
+					<p class="menu-moreinfos">Tous nos plats sont servis avec une petite salade verte et frites ou riz ou risotto ou pâtes.</p>
+					<p class="menu-moreinfos">Les viandes sont accompagnées d’une sauce au vin rouge.</p>
+					<p class="menu-moreinfos">Les poissons et les crevettes sont accompagnés d’une sauce au vin blanc.</p>
 		  			<div id="abg-pagination"><?php my_pagination(); ?></div>
 
 	  				</div>

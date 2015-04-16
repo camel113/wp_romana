@@ -36,7 +36,7 @@ get_header(); ?>
 								      'posts_per_page' => -1,
 								      'caller_get_posts'=> 1,
 								      'orderby' =>'date',
-								      'order' => 'asc'
+								      'order' => 'desc'
 								    );
 
 								    $my_query = null;
